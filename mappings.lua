@@ -17,6 +17,11 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
+    -- movements
+    ["<leader>wh"] = { "<cmd>wincmd h<cr>", desc = "Terminal left window navigation" },
+    ["<leader>wj"] = { "<cmd>wincmd j<cr>", desc = "Terminal down window navigation" },
+    ["<leader>wk"] = { "<cmd>wincmd k<cr>", desc = "Terminal up window navigation" },
+    ["<leader>wl"] = { "<cmd>wincmd l<cr>", desc = "Terminal right window navigation" },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
